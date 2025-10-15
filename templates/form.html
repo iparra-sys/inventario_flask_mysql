@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  {% if producto %}Editar Producto{% else %}Agregar Producto{% endif %}
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+  <div class="card shadow-lg border-0 rounded-4">
+    <div class="card-header bg-primary text-white text-center fs-5 fw-semibold">
+      {% if producto %}
+        <i class="bi bi-pencil-square"></i> Editar Producto
+      {% else %}
+        <i class="bi bi-plus-circle"></i> Agregar Nuevo Producto
+      {% endif %}
+    </div>
+
+    <div class="card-body p-4">
+      <form method="POST" action="">
+        <div class="mb-3">
+          <label for="nombre" class="form-label fw-semibold">Nombre del producto</label>
+          <input type="text" class="form-control form-control-lg" id="nombre" name="nombre" 
+                 value="{{ producto[1] if producto else '' }}" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="categoria" class="form-label fw-semibold">Categoría</label>
+          <input type="text" class="form-control form-control-lg" id="categoria" name="categoria" 
+                 value="{{ producto[2] if producto else '' }}">
+        </div>
+
+        <div class="mb-3">
+          <label for="cantidad" class="form-label fw-semibold">Cantidad</label>
+          <input type="number" class="form-control form-control-lg" id="cantidad" name="cantidad" min="0"
+                 value="{{ producto[3] if producto else '' }}">
+        </div>
+
+        <div class="mb-4">
+          <label for="precio" class="form-label fw-semibold">Precio (COP)</label>
+          <input type="number" step="0.01" class="form-control form-control-lg" id="precio" name="precio"
+                 value="{{ producto[4] if producto else '' }}">
+        </div>
+
+        <div class="d-flex justify-content-between">
+          <a href="/" class="btn btn-outline-secondary btn-lg">
+            <i class="bi bi-arrow-left-circle"></i> Volver
+          </a>
+          <button type="submit" class="btn btn-success btn-lg px-4 shadow-sm">
+            <i class="bi bi-save"></i> {% if producto %}Actualizar{% else %}Guardar{% endif %}
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
