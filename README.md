@@ -18,7 +18,7 @@ Permite **agregar, editar, listar y eliminar productos** de un inventario en una
 ---
 
 ## 📁 Estructura del proyecto
-
+```
 INVENTARIO_FLASK_MYSQL/
 │
 ├── app.py # Lógica principal Flask
@@ -31,6 +31,7 @@ INVENTARIO_FLASK_MYSQL/
 │ └── edit.html
 └── static/ # CSS, imágenes y scripts
 └── style.css
+```
 
 ---
 
