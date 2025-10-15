@@ -93,13 +93,11 @@ python app.py
 ![Listado de productos](https://github.com/iparra-sys/inventario_flask_mysql/assets/tu-imagen-listado.png)
 
 ### ➕ Agregar producto
-![Agregar producto](https://github.com/iparra-sys/inventario_flask_mysql/assets/tu-imagen-agregar.png)
+![Agregar producto](https://github.com/iparra-sys/inventario_flask_mysql/edit/main/README.md)
 
 ### ✏️ Editar producto
 ![Editar producto](https://github.com/iparra-sys/inventario_flask_mysql/assets/tu-imagen-editar.png)
 
-### 🗑️ Eliminar producto
-![Eliminar producto](https://github.com/iparra-sys/inventario_flask_mysql/assets/tu-imagen-eliminar.png)
 
 ---
 
