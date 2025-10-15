@@ -74,7 +74,7 @@ MYSQL_DATABASE=inventario_flask
 ---
 
 5️⃣ Crear base de datos y tabla
-
+```bash
 CREATE DATABASE inventario_flask;
 USE inventario_flask;
 
@@ -85,7 +85,7 @@ CREATE TABLE productos (
     cantidad INT,
     precio DECIMAL(10,2)
 );
-
+```
 ---
 
 6️⃣ Ejecutar la aplicación
