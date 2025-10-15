@@ -1,36 +1,39 @@
-# 🧾 Inventario de Productos - Flask + MySQL
+# 🧮 Inventario Flask + MySQL
 
-Proyecto CRUD desarrollado con **Flask**, **MySQL** y **Bootstrap**, como parte de mi portafolio de desarrolladora.
-
-Permite **agregar, editar, listar y eliminar productos** de un inventario en una interfaz web limpia y funcional.
-
----
-
-## 🚀 Tecnologías usadas
-
-- 🐍 **Python 3.x**
-- 🌐 **Flask**
-- 💾 **MySQL**
-- 🎨 **Bootstrap 5**
-- ⚙️ **MySQL Connector**
-- 🔐 **dotenv (variables de entorno)**
+Aplicación CRUD desarrollada con **Flask** y **MySQL**, que permite gestionar productos de un inventario.  
+Incluye funciones para **agregar, editar, eliminar y listar** productos en una interfaz limpia y moderna.
 
 ---
 
-## 📁 Estructura del proyecto
+## 🚀 Tecnologías utilizadas
 
+- **Python 3**
+- **Flask**
+- **MySQL**
+- **Jinja2**
+- **Bootstrap 5**
+- **HTML / CSS**
+
+---
+
+## 🧱 Estructura del proyecto
+
+```text
 INVENTARIO_FLASK_MYSQL/
 │
-├── app.py # Lógica principal Flask
-├── .env # Variables de conexión (no subir)
-├── requirements.txt # Dependencias
-├── templates/ # Archivos HTML (Jinja2)
-│ ├── base.html
-│ ├── index.html
-│ ├── add.html
-│ └── edit.html
-└── static/ # CSS, imágenes y scripts
-└── style.css
+├── app.py                  # Lógica principal en Flask
+├── .env                    # Variables de entorno (no subir al repositorio)
+├── requirements.txt        # Dependencias del proyecto
+│
+├── templates/              # Plantillas HTML (Jinja2)
+│   ├── base.html
+│   ├── index.html
+│   ├── add.html
+│   └── edit.html
+│
+└── static/                 # Archivos estáticos: CSS, imágenes y scripts
+    └── style.css
+```
 
 ---
 
@@ -41,25 +44,19 @@ INVENTARIO_FLASK_MYSQL/
 git clone https://github.com/ivethparra/inventario_flask_mysql.git
 cd inventario_flask_mysql
 ```
-
----
-
-2️⃣ Crear entorno virtual
+2️⃣ Crear y activar un entorno virtual
 ```bash
 python -m venv venv
-venv\Scripts\actívate
+# Activar en Windows:
+venv\Scripts\activate
+# Activar en Linux/Mac:
+source venv/bin/activate
 ```
-
----
-
 3️⃣ Instalar dependencias
 ```bash
 pip install -r requirements.txt
 ```
-
----
-
-4️⃣ Crear archivo .env con tus credenciales de MySQL
+ Crear archivo .env con tus credenciales de MySQL
 ```bash
 MYSQL_HOST=localhost
 MYSQL_PORT=3306
@@ -67,11 +64,8 @@ MYSQL_USER=root
 MYSQL_PASSWORD=tu_contraseña
 MYSQL_DATABASE=inventario_flask
 ```
-
----
-
 5️⃣ Crear base de datos y tabla
-
+```bash
 CREATE DATABASE inventario_flask;
 USE inventario_flask;
 
@@ -82,53 +76,71 @@ CREATE TABLE productos (
     cantidad INT,
     precio DECIMAL(10,2)
 );
-
----
-
+```
 6️⃣ Ejecutar la aplicación
 ```bash
 python app.py
 
 ```
-
----
-
 7️⃣ Abrir en el navegador
 👉 http://localhost:5000
 
 ---
 
-📸 Capturas de pantalla
-🖥️ Pantalla principal
+## 📸 Capturas de pantalla
 
-➕ Agregar producto
+### 🖥️ Pantalla principal
+<p align="center">
+  <img src="https://raw.githubusercontent.com/iparra-sys/inventario_flask_mysql/main/static/preview_index.png" alt="Pantalla principal - Inventario" width="600">
+</p>
 
-✏️ Editar producto
+### ➕ Agregar producto
+<p align="center">
+  <img src="https://raw.githubusercontent.com/iparra-sys/inventario_flask_mysql/main/static/preview_add.png" alt="Agregar producto - Inventario" width="600">
+</p>
+
+### ✏️ Editar producto
+<p align="center">
+  <img src="https://raw.githubusercontent.com/iparra-sys/inventario_flask_mysql/main/static/preview_edit.png" alt="Editar producto - Inventario" width="600">
+</p>
+
 
 ---
 
-🧩 Funcionalidades
+## ⚙️ Funcionalidades principales
 
-✅ CRUD completo (Crear, Leer, Actualizar, Eliminar)
-✅ Conexión segura a MySQL mediante variables de entorno
-✅ Interfaz moderna con Bootstrap
-✅ Validaciones y mensajes visuales de éxito/error
-✅ Código modular y fácil de mantener
+✅ **Visualizar productos:** muestra una tabla con todos los registros del inventario.  
+➕ **Agregar productos:** formulario con validación básica para ingresar nuevos artículos.  
+✏️ **Editar productos:** permite actualizar la información de un producto existente.  
+🗑️ **Eliminar productos:** elimina productos de forma permanente del inventario.  
+💾 **Conexión MySQL segura:** mediante variables de entorno definidas en el archivo `.env`.  
+🎨 **Interfaz moderna y responsive:** construida con Bootstrap 5 y plantillas Jinja2.  
+📂 **Estructura clara y modular:** separa la lógica de Flask, las plantillas HTML y los recursos estáticos.
 
+---
 
+## 🚀 Próximas mejoras
 
-👩‍💻 Autor
+Estas son algunas ideas que se planean implementar en futuras versiones del proyecto:
 
-Iveth Parra Herrera
-Desarrolladora en formación | Enfocada en Python y desarrollo web
-🔗 LinkedIn
-🔗 GitHub
+- 🔐 Sistema de **autenticación de usuarios** (login y roles: admin / empleado).  
+- 📊 Módulo de **reportes y estadísticas** con gráficos interactivos.  
+- 💾 Integración con **subida de archivos CSV** para carga masiva de productos.  
+- 🌍 Despliegue del proyecto en **Render o Railway** con base de datos MySQL remota.  
+- 🧪 Implementación de **tests automatizados** con `pytest` para garantizar la calidad del código.  
+- 🎨 Mejora de la interfaz con **Bootstrap 5** o **Tailwind CSS**.  
 
-🌱 Próximas mejoras
+---
 
-🔐 Sistema de autenticación (login de usuarios)
-🔎 Búsqueda y filtros dinámicos
-📤 Exportar inventario a CSV
-☁️ Despliegue en Render o PythonAnywhere
+## 👩‍💻 Autora
+
+**Iveth Parra Herrera**  
+Desarrolladora Junior | Python | Flask | MySQL | HTML | CSS | JavaScript  
+
+📫 **Contacto:**  
+- 🌐 [LinkedIn](https://www.linkedin.com/in/iveth-parra-herrera-351a6a235)  
+- 💻 [GitHub](https://github.com/iparra-sys)
+
+💡 *“El código es una herramienta para construir soluciones reales y dejar huella.”*
 
 ✨ Proyecto desarrollado como parte del Portafolio 2025 - Iveth Parra Herrera ✨
