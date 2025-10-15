@@ -1,7 +1,7 @@
 # 🧮 Inventario Flask + MySQL
 
-Aplicación CRUD desarrollada con **Flask** y **MySQL**, que permite gestionar productos de un inventario.  
-Incluye funciones para **agregar, editar, eliminar y listar** productos en una interfaz limpia y moderna.
+Aplicación web CRUD desarrollada con Flask y MySQL para la gestión de productos. Incluye autenticación básica, conexión mediante variables de entorno y una interfaz moderna con Bootstrap.
+Este proyecto demuestra la integración completa entre backend y base de datos, manejo de rutas, plantillas Jinja2 y uso de mensajes dinámicos (flash messages) en Flask.
 
 ---
 
