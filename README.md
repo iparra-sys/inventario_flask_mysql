@@ -87,23 +87,19 @@ python app.py
 
 ---
 
-## 📸 Capturas de pantalla
+## 📸 Capturas de Pantalla
 
-### 🖥️ Pantalla principal
-<p align="center">
-  <img src="https://raw.githubusercontent.com/iparra-sys/inventario_flask_mysql/main/static/preview_index.png" alt="Pantalla principal - Inventario" width="600">
-</p>
+### 🏠 Página principal (Listado de productos)
+![Listado de productos](https://github.com/iparra-sys/inventario_flask_mysql/assets/tu-imagen-listado.png)
 
 ### ➕ Agregar producto
-<p align="center">
-  <img src="https://raw.githubusercontent.com/iparra-sys/inventario_flask_mysql/main/static/preview_add.png" alt="Agregar producto - Inventario" width="600">
-</p>
+![Agregar producto](https://github.com/iparra-sys/inventario_flask_mysql/assets/tu-imagen-agregar.png)
 
 ### ✏️ Editar producto
-<p align="center">
-  <img src="https://raw.githubusercontent.com/iparra-sys/inventario_flask_mysql/main/static/preview_edit.png" alt="Editar producto - Inventario" width="600">
-</p>
+![Editar producto](https://github.com/iparra-sys/inventario_flask_mysql/assets/tu-imagen-editar.png)
 
+### 🗑️ Eliminar producto
+![Eliminar producto](https://github.com/iparra-sys/inventario_flask_mysql/assets/tu-imagen-eliminar.png)
 
 ---
 
