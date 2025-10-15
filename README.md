@@ -90,13 +90,13 @@ python app.py
 ## 📸 Capturas de Pantalla
 
 ### 🏠 Página principal (Listado de productos)
-![Listado de productos](https://github.com/iparra-sys/inventario_flask_mysql/assets/tu-imagen-listado.png)
+![Listado de productos](https://github.com/iparra-sys/inventario_flask_mysql/blob/main/static/preview_index.png)
 
 ### ➕ Agregar producto
-![Agregar producto](https://github.com/iparra-sys/inventario_flask_mysql/edit/main/README.md)
+![Agregar producto](https://github.com/iparra-sys/inventario_flask_mysql/blob/main/static/preview_add.png)
 
 ### ✏️ Editar producto
-![Editar producto](https://github.com/iparra-sys/inventario_flask_mysql/assets/tu-imagen-editar.png)
+![Editar producto](https://github.com/iparra-sys/inventario_flask_mysql/blob/main/static/preview_edit.png)
 
 
 ---
