@@ -33,7 +33,7 @@ INVENTARIO_FLASK_MYSQL/
 │
 └── static/                 # Archivos estáticos: CSS, imágenes y scripts
     └── style.css
-
+```
 
 ---
 
