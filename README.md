@@ -109,27 +109,29 @@ python app.py
 ---
 
 🧩 Funcionalidades
-
+```
 ✅ CRUD completo (Crear, Leer, Actualizar, Eliminar)
 ✅ Conexión segura a MySQL mediante variables de entorno
 ✅ Interfaz moderna con Bootstrap
 ✅ Validaciones y mensajes visuales de éxito/error
 ✅ Código modular y fácil de mantener
-
-
+```
+---
 
 👩‍💻 Autor
-
+```
 Iveth Parra Herrera
 Desarrolladora en formación | Enfocada en Python y desarrollo web
 🔗 LinkedIn
 🔗 GitHub
+```
+---
 
 🌱 Próximas mejoras
-
+```
 🔐 Sistema de autenticación (login de usuarios)
 🔎 Búsqueda y filtros dinámicos
 📤 Exportar inventario a CSV
 ☁️ Despliegue en Render o PythonAnywhere
-
+```
 ✨ Proyecto desarrollado como parte del Portafolio 2025 - Iveth Parra Herrera ✨
