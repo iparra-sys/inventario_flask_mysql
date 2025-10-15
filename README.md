@@ -1,37 +1,39 @@
-# 🧾 Inventario de Productos - Flask + MySQL
+# 🧮 Inventario Flask + MySQL
 
-Proyecto CRUD desarrollado con **Flask**, **MySQL** y **Bootstrap**, como parte de mi portafolio de desarrolladora.
-
-Permite **agregar, editar, listar y eliminar productos** de un inventario en una interfaz web limpia y funcional.
-
----
-
-## 🚀 Tecnologías usadas
-
-- 🐍 **Python 3.x**
-- 🌐 **Flask**
-- 💾 **MySQL**
-- 🎨 **Bootstrap 5**
-- ⚙️ **MySQL Connector**
-- 🔐 **dotenv (variables de entorno)**
+Aplicación CRUD desarrollada con **Flask** y **MySQL**, que permite gestionar productos de un inventario.  
+Incluye funciones para **agregar, editar, eliminar y listar** productos en una interfaz limpia y moderna.
 
 ---
 
-## 📁 Estructura del proyecto
-```
+## 🚀 Tecnologías utilizadas
+
+- **Python 3**
+- **Flask**
+- **MySQL**
+- **Jinja2**
+- **Bootstrap 5**
+- **HTML / CSS**
+
+---
+
+## 🧱 Estructura del proyecto
+
+```text
 INVENTARIO_FLASK_MYSQL/
 │
-├── app.py # Lógica principal Flask
-├── .env # Variables de conexión (no subir)
-├── requirements.txt # Dependencias
-├── templates/ # Archivos HTML (Jinja2)
-│ ├── base.html
-│ ├── index.html
-│ ├── add.html
-│ └── edit.html
-└── static/ # CSS, imágenes y scripts
-└── style.css
-```
+├── app.py                  # Lógica principal en Flask
+├── .env                    # Variables de entorno (no subir al repositorio)
+├── requirements.txt        # Dependencias del proyecto
+│
+├── templates/              # Plantillas HTML (Jinja2)
+│   ├── base.html
+│   ├── index.html
+│   ├── add.html
+│   └── edit.html
+│
+└── static/                 # Archivos estáticos: CSS, imágenes y scripts
+    └── style.css
+
 
 ---
 
